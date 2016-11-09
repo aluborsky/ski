@@ -9,57 +9,84 @@
 			font-family: "kelson";
 			src: url("font/Kelson_Sans_Regular.otf");
 		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
 		body {
 			background-color: #ffffff;
-			background-image: url("img/header.jpg");
-			background-repeat: no-repeat;
-			width: 600px;
-			height: auto;
-			padding: 10px;
 			font-family: "kelson", "Roboto", Arial, sans-serif;
 			font-size: 100%;
-		} 
+		}
+
 		h1 {
-			padding-bottom: 10px;
+			padding-bottom: 15px;
 			text-align: center;
 			text-decoration: underline;
-
+			width: 100%;
 		}
+
 		h2 {
-			font-size: 1.1em;
-			width: 550px;
-			margin: auto;
+			font-size: 1.3em;
+			margin: 12px;
 			line-height: 1.4em;
-
 		}
+
 		h3 {
-			padding-top: 10px;
+			padding: 15px 0;
 			font-size: 1.1em;
 		}
+
 		p {
 			font-family: "Roboto", arial, sans-serif;
-			line-height: 1.4em;
 			font-size: 1.0em;
 			text-indent: 16px;
+			line-height: 1.4em;
+			padding-bottom: 5px;
 		}
+
 		a:link, a:visited, a:active {
 			color: #1AB7EA;
 			font-style: italic;
 			text-decoration: none;
 		}
+
 		a:hover {
 			text-decoration: underline;
 		}
-		#main {
-			position: absolute;
-			top: 440px;
-			width: 560px;
-			height: auto;		
+
+		#image {
+			max-width: 600px;
 		}
+
+		#text {
+			position: absolute;
+			max-width: 560px;
+			padding: 10px;		
+		}
+
+		@media only screen and (max-width: 500px) {
+			body { 
+					font-size: 90%;}
+			}
+		}
+
+
+/*		@media screen and (max-width: 375px) {
+		    #main {
+		    	top: 30%;
+		    }
+		} */
 	</style>
 </head>
 <body>
-	<div id="main">
+	<div id="image">
+		<img src="img/header.jpg" width="100%">
+	</div>
+
+	<div id="text">
 		<h1>5 Reasons to Ski Canada this Winter</h1>
 
 		<h2>Calling all skiers! Nowhere does winter, and skiing, better than the Great White North. Canada has a thriving ski culture that runs from November to April (and sometimes even May!). It goes without saying that the conditions and quality of the resorts are world class…. but beyond that, what makes Canada the perfect choice this winter?</h2>
