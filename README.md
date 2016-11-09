@@ -1,1 +1,1 @@
-# ski
+# SkiingMag E-Blast
